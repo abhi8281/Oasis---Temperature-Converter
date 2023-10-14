@@ -1,0 +1,84 @@
+body {
+    font-family: 'Young Serif', serif;
+    text-align: center;
+    background: linear-gradient(135deg, #f3c7c6, #b2ebf2, #c7c3ff); 
+    overflow: hidden;
+}
+
+.weather-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    animation: moveWeather 20s linear infinite;
+}
+
+@keyframes moveWeather {
+    0% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+.converter {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #0074cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0057a3;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;   
+}
